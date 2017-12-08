@@ -152,11 +152,8 @@ namespace RevitIfcPropertyBrowser
 		public bool Visible { get; set; } = true;
 		public object Value
 		{
-			get => mValue;
-			set
-			{
-				//To Implement so that property can be stored on revit parameter.
-			}
+            		get { return mValue; }
+            		set { mValue = value; }
 		}
 	}
 
